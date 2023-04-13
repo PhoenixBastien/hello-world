@@ -1,5 +1,6 @@
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 cd "$SCRIPT_DIR"
+mkdir ../bin
 printf "Bash: " && bash hello.sh
 printf "C: " && gcc hello.c -o ../bin/hello_c && ../bin/hello_c
 printf "C++: " && g++ hello.cpp -o ../bin/hello_cpp && ../bin/hello_cpp
