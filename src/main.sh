@@ -1,5 +1,5 @@
 src=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-bin=../bin
+bin=$src/../bin
 cd $src
 if ! ( test -d $bin ); then mkdir $bin; fi
 printf "Bash: " && bash hello.sh
